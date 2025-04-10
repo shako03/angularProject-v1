@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { HotelsService } from '../services/hotels.service';
 
 @Component({
   selector: 'app-hotels',
@@ -7,5 +8,13 @@ import { Component } from '@angular/core';
   styleUrl: './hotels.component.scss'
 })
 export class HotelsComponent {
+  constructor( private httpHotel : HotelsService ){ }
+
+  ngOnInit(){
+
+    this.httpHotel.getAllHotels().subscribe((resp : any ) =>{
+      console.log(resp)
+    })
+  }
 
 }

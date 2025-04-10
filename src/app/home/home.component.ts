@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Hotel } from '../models/hotels';
 
 @Component({
   selector: 'app-home',
@@ -7,5 +8,8 @@ import { Component } from '@angular/core';
   styleUrl: './home.component.scss'
 })
 export class HomeComponent {
+
+
+  hotelsArr : Hotel[] = []
 
 }
