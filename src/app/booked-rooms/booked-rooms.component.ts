@@ -1,11 +1,11 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Hotel } from '../models/hotels';
 
 @Component({
   selector: 'app-booked-rooms',
-  imports: [],
   templateUrl: './booked-rooms.component.html',
-  styleUrl: './booked-rooms.component.scss'
+  styleUrls: ['./booked-rooms.component.scss']
 })
 export class BookedRoomsComponent {
-
+  
 }
