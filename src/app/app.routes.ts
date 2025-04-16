@@ -7,19 +7,19 @@ export const routes: Routes = [
 
       {
             path:"Home",
-            loadComponent:()=>import('./home/home.component').then(m => m.HomeComponent)
+            loadComponent:()=>import('./Pages/home/home.component').then(m => m.HomeComponent)
       },
 
       {
             path:"Room",
-            loadComponent:()=>import('./rooms/rooms.component').then(m => m.RoomsComponent)
+            loadComponent:()=>import('./Pages/rooms/rooms.component').then(m => m.RoomsComponent)
       },
       {
             path:"Hotels",
-            loadComponent:()=>import('./hotels/hotels.component').then(m => m.HotelsComponent)
+            loadComponent:()=>import('./Pages/hotels/hotels.component').then(m => m.HotelsComponent)
       },
       {
             path:"Booked-rooms",
-            loadComponent:()=>import('./booked-rooms/booked-rooms.component').then(m => m.BookedRoomsComponent)
+            loadComponent:()=>import('./Pages/booked-rooms/booked-rooms.component').then(m => m.BookedRoomsComponent)
       }
 ];
